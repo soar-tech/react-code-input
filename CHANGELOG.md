@@ -1,3 +1,9 @@
+#### 3.9.3 (2019-11-25)
+
+##### New Features
+
+*  add required prop to input elements ([0056e794](https://github.com/40818419/react-code-input/commit/0056e794cd7878ce6b6922b83f74211443d684af))
+
 #### 3.9.2 (2019-11-20)
 
 #### 3.8.1 (2018-11-02)
