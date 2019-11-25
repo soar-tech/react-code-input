@@ -77,6 +77,9 @@ export interface ReactCodeInputProps {
 
   // The inputMode prop tells the browser on devices with dynamic keyboards which keyboard to display.
   inputMode: InputModeTypes;
+
+  // The HTML/React `required` prop for input elements, determines if input is required before form submit, `false` by default.
+  required?: boolean;
 }
 
 declare class ReactCodeInput extends Component<ReactCodeInputProps, any> {

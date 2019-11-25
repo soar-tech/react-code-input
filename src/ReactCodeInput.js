@@ -228,6 +228,7 @@ class ReactCodeInput extends Component {
           e.preventDefault();
           break;
         }
+        break;
 
       default:
         break;
@@ -245,7 +246,8 @@ class ReactCodeInput extends Component {
         type,
         autoFocus,
         pattern,
-        inputMode
+        inputMode,
+        required
       } = this.props,
       { disabled, input, isValid, defaultInputStyle } = this.state,
       styles = {
@@ -310,6 +312,7 @@ class ReactCodeInput extends Component {
               data-valid={isValid}
               pattern={pattern}
               inputMode={inputMode}
+              required={required}
             />
           );
         })}
@@ -328,7 +331,8 @@ ReactCodeInput.defaultProps = {
   type: "text",
   filterKeyCodes: [189, 190],
   filterChars: ["-", "."],
-  filterCharsIsBlacklist: true
+  filterCharsIsBlacklist: true,
+  required: false,
 };
 
 ReactCodeInput.propTypes = {
@@ -364,7 +368,8 @@ ReactCodeInput.propTypes = {
     "tel",
     "email",
     "url"
-  ])
+  ]),
+  required: PropTypes.bool,
 };
 
 export default ReactCodeInput;

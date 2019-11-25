@@ -103,6 +103,7 @@ const ReactCodeInput = dynamic(import('react-code-input'));
 | filterChars | array | Filter characters. | default: ['-', '.'] |
 | pattern | string | The pattern prop specifies a regular expression that the <input> element's value is checked against. |
 | inputMode | string | The inputMode prop tells the browser on devices with dynamic keyboards which keyboard to display. |
+| required | bool | The HTML/React `required` prop for input elements, determines if input is required before form submit, `false` by default. |
 
 ## Compatible with
 [`redux-form`](https://github.com/erikras/redux-form) from [erikras](https://github.com/erikras)
